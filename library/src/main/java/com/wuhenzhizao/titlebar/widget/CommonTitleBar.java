@@ -687,6 +687,12 @@ public class CommonTitleBar extends RelativeLayout implements View.OnClickListen
                 } else {
                     ivVoice.setVisibility(View.GONE);
                 }
+                ivVoice.setOnClickListener(new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        etSearchHint.setText("");
+                    }
+                });
             }
         }
     };
